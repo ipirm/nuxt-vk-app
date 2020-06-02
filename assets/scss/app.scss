@@ -1,0 +1,22 @@
+@import "header-tabs";
+@import "main-page";
+@import "contacts-page";
+@import "bottom-navigation";
+@import "modal";
+@import "card";
+@import "pickoner";
+
+a {
+  text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  word-break: break-word;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}

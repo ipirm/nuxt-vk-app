@@ -1,0 +1,142 @@
+.pickoner {
+  &-circular {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -20px -10px;
+    position: relative;
+
+    &-item {
+      max-width: 33.33%;
+      margin: 20px 10px;
+      font-size: 14px;
+      line-height: 16px;
+      color: #9A9A9A;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+
+      img {
+        margin-bottom: 10px;
+      }
+
+      .active {
+        display: none;
+      }
+
+      &.active {
+        font-weight: bold;
+
+        .active {
+          display: block;
+        }
+
+        .passive {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-item {
+      background: #FFFFFF;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 50px;
+      padding: 10px;
+      font-size: 16px;
+      line-height: 19px;
+      color: #9A9A9A;
+      margin-bottom: 20px;
+      width: 200px;
+      min-height: 40px;
+      text-align: center;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      border: 3px solid white;
+
+      span {
+        position: relative;
+        z-index: 1;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .active {
+        display: none;
+      }
+
+      &.active {
+        font-weight: bold;
+        border: 3px solid #7A14B0;
+
+        .active {
+          display: block;
+        }
+
+        .passive {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &-checkboxes {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+
+    &-item {
+      font-size: 16px;
+      line-height: 19px;
+      color: #A9A9A9;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .checkbox {
+        background: #FFFFFF;
+        box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        margin-right: 10px;
+        min-width: 31px;
+        max-width: 31px;
+        min-height: 31px;
+        max-height: 31px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .tick {
+        display: none;
+      }
+
+      &.active {
+        font-weight: bold;
+
+        .tick {
+          display: block;
+        }
+      }
+    }
+  }
+}
