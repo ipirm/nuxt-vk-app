@@ -1,8 +1,8 @@
 {
-  "name": "vision",
+  "name": "Vk App",
   "version": "1.0.0",
   "description": " ",
-  "author": "kit@itis.team",
+  "author": "ilham.pirm@gmail.com",
   "private": true,
   "scripts": {
     "dev": "nuxt",
